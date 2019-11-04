@@ -1,0 +1,39 @@
+# Site settings
+title: Schnitzel NYC
+description: "Schnitzeljagt through New York City"
+url: "https://heartsofcode.github.io/schnitzel-nyc/"
+author:
+  name: "Heart of Code"
+  email: "hello@heartofcode.org"
+  url: "//heartofcode.org"
+
+# Build settings
+baseurl: /schnitzel-nyc
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+version: "first version 🤞"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
